@@ -11,7 +11,7 @@ def load_data():
     try:
         df = pd.read_excel('Pharmacy_data.xlsx')
 
-        # --- 2. Data Preprocessing (as done in Colab) ---
+        # --- 2. Data Preprocessing (as done previously) ---
         df['Date'] = pd.to_datetime(df['DateKey'].astype(str), format='%Y%m%d')
 
         regions = ['North', 'South', 'East', 'West']
